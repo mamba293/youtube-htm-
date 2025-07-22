@@ -483,10 +483,13 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   gap: 40px;
-  margin-right: 0;
+  
  }
  .navbar__search {
   width: 350px !important;
+ }
+ .recommended_paragrapgh {
+  display: none;
  }
 }
 
@@ -500,12 +503,14 @@ body {
  .blogger__layer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between    ;
+  justify-content: space-between;
   gap: 40px;
-  margin-right: 82px;
  }
  .navbar__search {
-    width: 500px;
+  width: 500px;
+ }
+ .recommended_paragrapgh {
+  display: none;
  }
 }
 
@@ -613,7 +618,6 @@ body {
  }
 
  .main_content {
-  position: fixed;
   margin: 0;
   padding: 0 16px;
  }
