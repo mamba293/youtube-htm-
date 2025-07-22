@@ -524,7 +524,7 @@ body {
 
  .navbar__icon-item-search {
   margin-right: 24px;
-  cursor:pointer    ;
+  cursor: pointer;
  }
 
  .search_icon-mobile {
@@ -575,7 +575,7 @@ body {
 
  .main_content {
   margin: 0;
-  width: 100%;
+
   padding: 0 16px;
  }
 
@@ -590,7 +590,7 @@ body {
   overflow-y: hidden;
   scroll-behavior: smooth;
   height: auto;
-  max-width: 30rem;
+  width: 100%;
   padding: 0;
  }
 
@@ -598,19 +598,27 @@ body {
   display: none;
  }
 
- .slide__image {
+ .scroll__card {
   width: 100%;
-  height: 150px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
  }
 
  .slide__image-wrapper {
-  max-width: 100%;
-  height: 9.375rem;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto; 
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 10px;
  }
 
- .scroll__card {
-  cursor: pointer;
-  width: 288px;
+ .slide__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
  }
 
  .video__info {
@@ -618,5 +626,4 @@ body {
   flex: 1;
   justify-content: space-between;
  }
-
 }
